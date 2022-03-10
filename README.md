@@ -38,7 +38,7 @@
 - index.html: base app HTML
 - `<app-root></app-root>`: App component selector. Gets dinamically replaced with the component
 
-5. Using Bootstrap for Styling
+### 5. Using Bootstrap for Styling
 
 - Install bootstrap locally: `npm install --save bootstrap`
 - styles.css file: can be used to define global styles for the app
@@ -46,10 +46,17 @@
 
 ## Chapter 2 : The Basics
 
-1. Loading and Starting an Angular Application
+### 1. Loading and Starting an Angular Application
 
 - The file served to the browser is index.html
 - `<app-root></app-root>`: root component of application
 - Component selector: tells component which HTML element with component template
-- How does Angular kick in? The CLI injects the Javascript bundles into the HTML before serving it. 
+- How does Angular kick in? The CLI injects the Javascript bundles into the HTML before serving it.
 - main.ts: is the first code that gets executed. Bootstraps the app with app.module.ts
+
+### 2. Important Components
+
+- Components are the building blocks of an application
+- The app (or root) component nests all the other components of an app.
+- Each component has its own template and its own logic
+- Components are reusable and replicable
