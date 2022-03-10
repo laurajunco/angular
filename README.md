@@ -16,10 +16,12 @@
 
 3. Setting up first project
 
+- Uses Node.js and npm
 - Use the official Angular Command Line Interface CLI
+- Can use `ng new my-app --no-strict` mode.
 
-```
-npm install -g @angular/cli
+```bash
+npm install -g @angular/cli@latest
 ng new my-app
 cd my-app
 ng serve --open
