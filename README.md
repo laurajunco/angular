@@ -19,10 +19,21 @@
 - Uses Node.js and npm
 - Use the official Angular Command Line Interface CLI
 - Can use `ng new my-app --no-strict` mode.
+  ```bash
+  npm install -g @angular/cli@latest
+  ng new my-app
+  cd my-app
+  ng serve --open
+  ```
 
-```bash
-npm install -g @angular/cli@latest
-ng new my-app
-cd my-app
-ng serve --open
-```
+4. Editing the First Application
+
+- package.json file: list of dependencies and libraries needed in the project.
+- node_modules/ : where dependencies files are installed.
+- src/ : where the app code is.
+- app.component.html: component template
+- app.component.css: component styles
+- app.component.ts: component definition
+- app.module.ts: we tell Angular which pieces to use
+- index.html: base app HTML
+- <app-root></app-root>: App component selector. Gets dinamically replaced with the component
