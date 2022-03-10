@@ -45,3 +45,11 @@
 - Import bootstrap.css file in angular.json
 
 ## Chapter 2 : The Basics
+
+1. Loading and Starting an Angular Application
+
+- The file served to the browser is index.html
+- `<app-root></app-root>`: root component of application
+- Component selector: tells component which HTML element with component template
+- How does Angular kick in? The CLI injects the Javascript bundles into the HTML before serving it. 
+- main.ts: is the first code that gets executed. Bootstraps the app with app.module.ts
