@@ -67,3 +67,6 @@
 - A component is jusr a class. Angular is able to instantiate it to create objects
 - We need to add a decorator to the class so Angular knows its a component. Decorators are a TypeScript feature that allow to enhance code elements.
 
+### 4. Understanding the Role of AppModule and Component Declaration
+- Angular will not scan all files by default. Hence, we have to register a new component in the appModule declarations.
+- 
