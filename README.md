@@ -72,3 +72,8 @@
 
 ### 5. Using Custom Components
 - Use a component by adding its html selector to any other component template.
+
+### 6. Creating Components with the Command Line Input (CLI) and Nesting Components
+- We can create components from the CLI
+- `ng generate component servers` or  `ng g c servers`
+- This will create all the base files needed for a new component
