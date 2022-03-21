@@ -77,3 +77,7 @@
 - We can create components from the CLI
 - `ng generate component servers` or  `ng g c servers`
 - This will create all the base files needed for a new component
+
+### 7. Working with Component Templates
+- A component must always have a template. It can be templateUrl or just Template
+- in template we just write the html code inside de TypeScript Component
