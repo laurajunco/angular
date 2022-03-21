@@ -68,32 +68,39 @@
 - We need to add a decorator to the class so Angular knows its a component. Decorators are a TypeScript feature that allow to enhance code elements.
 
 ### 4. Understanding the Role of AppModule and Component Declaration
+
 - Angular will not scan all files by default. Hence, we have to register a new component in the appModule declarations.
 
 ### 5. Using Custom Components
+
 - Use a component by adding its HTML selector to any other component template.
 
 ### 6. Creating Components with the Command Line Input (CLI) and Nesting Components
+
 - We can create components from the CLI
-- `ng generate component servers` or  `ng g c servers`
+- `ng generate component servers` or `ng g c servers`
 - This will create all the base files needed for a new component
 
 ### 7. Working with Component Templates
+
 - A component must always have a template. It can be templateUrl or just Template
 - in template we just write the HTML code inside de TypeScript Component
 
 ### 8. Working with Component Styles
+
 - As with templates we can also choose to write styles in a separate css file or to write them inline in the TypeScript component
 - Using styleUrls we can link several .css files
 - Using styles you declare styles as an array of css rules
 
 ### 9. Understanding the Component Selector
+
 - The component selector works as any other HTML selector
 - We can define a selector with any other HTML selector we want Ej: attributes, classes, etc.
 - ID and pseudo selectors won't work
 - For Components its typically use to create custom HTML elements
 
 ### 10. What is Data Binding
+
 - Communication between the Component class (business logic) and the template (view).
 - There can be different ways of communication.
 - To output data to our template we can use string iterpolation `{{ title }}`or Property binding `[property]='data'`
@@ -101,6 +108,13 @@
 - There is also Two-way-data-binding `[(NgModel)]="data"`
 
 ### 11. String interpolation
+
+- Tool for outputing data in our HTML template
 - In a component html file we can use TypeScript expressions inside `{{ }}`
 - These expressions must resolve to a String
 - Can't write multiline expressions. Not `if` or `for` but terniary operations are ok.
+
+### 12. Property Binding
+- There are a lot of cases when we can use Property Binding OR String interpolation
+- A component constructor is a method executed qhen the component is first created
+- Square brackets indicate that we want to dynamically bind some property to it `[]`
