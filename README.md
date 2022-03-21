@@ -69,4 +69,6 @@
 
 ### 4. Understanding the Role of AppModule and Component Declaration
 - Angular will not scan all files by default. Hence, we have to register a new component in the appModule declarations.
-- 
+
+### 5. Using Custom Components
+- Use a component by adding its html selector to any other component template.
