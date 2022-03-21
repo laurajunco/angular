@@ -92,3 +92,10 @@
 - We can define a selector with any other HTML selector we want Ej: attributes, classes, etc.
 - ID and pseudo selectors won't work
 - For Components its typically use to create custom HTML elements
+
+### 10. What is Data Binding
+- Communication between the Component class (business logic) and the template (view).
+- There can be different ways of communication.
+- To output data to our template we can use string iterpolation `{{ title }}`or Property binding `[property]='data'`
+- To react to user events we can use Event Binding `(event)="expression"`
+- There is also Two-way-data-binding `[(NgModel)]="data"`
