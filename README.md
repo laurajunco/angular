@@ -130,3 +130,6 @@
 
 - For wvwnt Binding we use parenthesis with the name of the event we want to listen to: `(click)="OnCreateServer()"`
 - As a general rule, we shouldn't put too much logic into our templates
+
+### 15. Passing and Using Data with Event Binding
+- `$event``is the data emmited with the event, we can pass this as an argument for a function
