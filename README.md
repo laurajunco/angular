@@ -60,3 +60,10 @@
 - The app (or root) component nests all the other components of an app.
 - Each component has its own template and its own logic
 - Components are reusable and replicable
+
+### 3. Creating a New Component
+
+- Create a subfolder of the app folder. Folder name should be equal to component name.
+- A component is jusr a class. Angular is able to instantiate it to create objects
+- We need to add a decorator to the class so Angular knows its a component. Decorators are a TypeScript feature that allow to enhance code elements.
+
