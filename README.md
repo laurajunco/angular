@@ -99,3 +99,8 @@
 - To output data to our template we can use string iterpolation `{{ title }}`or Property binding `[property]='data'`
 - To react to user events we can use Event Binding `(event)="expression"`
 - There is also Two-way-data-binding `[(NgModel)]="data"`
+
+### 11. String interpolation
+- In a component html file we can use TypeScript expressions inside `{{ }}`
+- These expressions must resolve to a String
+- Can't write multiline expressions. Not `if` or `for` but terniary operations are ok.
