@@ -81,3 +81,8 @@
 ### 7. Working with Component Templates
 - A component must always have a template. It can be templateUrl or just Template
 - in template we just write the html code inside de TypeScript Component
+
+### 8. Working with Component Styles
+- As with templates we can also choose to write styles in a separate css file or to write them inline in the TypeScript component
+- Using styleUrls we can link several .css files
+- Using styles you declare styles as an array of css rules
