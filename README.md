@@ -115,11 +115,18 @@
 - Can't write multiline expressions. Not `if` or `for` but terniary operations are ok.
 
 ### 12. Property Binding
+
 - There are a lot of cases when we can use Property Binding OR String interpolation
 - A component constructor is a method executed qhen the component is first created
 - Square brackets indicate that we want to dynamically bind some property to it `[]="typescript code"`
 
 ### 13. Property Binding Versus String Interpolation
+
 - We can use any HTML element property ofr property Binding such as innerText
 - When we just want to output something we should use String interpolation
 - When we want to change a property of an element is better to use Property Binding
+
+### 14. Event Binding
+
+- For wvwnt Binding we use parenthesis with the name of the event we want to listen to: `(click)="OnCreateServer()"`
+- As a general rule, we shouldn't put too much logic into our templates
