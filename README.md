@@ -117,4 +117,9 @@
 ### 12. Property Binding
 - There are a lot of cases when we can use Property Binding OR String interpolation
 - A component constructor is a method executed qhen the component is first created
-- Square brackets indicate that we want to dynamically bind some property to it `[]`
+- Square brackets indicate that we want to dynamically bind some property to it `[]="typescript code"`
+
+### 13. Property Binding Versus String Interpolation
+- We can use any HTML element property ofr property Binding such as innerText
+- When we just want to output something we should use String interpolation
+- When we want to change a property of an element is better to use Property Binding
