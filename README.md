@@ -71,7 +71,7 @@
 - Angular will not scan all files by default. Hence, we have to register a new component in the appModule declarations.
 
 ### 5. Using Custom Components
-- Use a component by adding its html selector to any other component template.
+- Use a component by adding its HTML selector to any other component template.
 
 ### 6. Creating Components with the Command Line Input (CLI) and Nesting Components
 - We can create components from the CLI
@@ -80,9 +80,15 @@
 
 ### 7. Working with Component Templates
 - A component must always have a template. It can be templateUrl or just Template
-- in template we just write the html code inside de TypeScript Component
+- in template we just write the HTML code inside de TypeScript Component
 
 ### 8. Working with Component Styles
 - As with templates we can also choose to write styles in a separate css file or to write them inline in the TypeScript component
 - Using styleUrls we can link several .css files
 - Using styles you declare styles as an array of css rules
+
+### 9. Understanding the Component Selector
+- The component selector works as any other HTML selector
+- We can define a selector with any other HTML selector we want Ej: attributes, classes, etc.
+- ID and pseudo selectors won't work
+- For Components its typically use to create custom HTML elements
