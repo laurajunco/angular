@@ -128,8 +128,16 @@
 
 ### 14. Event Binding
 
-- For wvwnt Binding we use parenthesis with the name of the event we want to listen to: `(click)="OnCreateServer()"`
+- For event Binding we use parenthesis with the name of the event we want to listen to: `(click)="OnCreateServer()"`
 - As a general rule, we shouldn't put too much logic into our templates
 
 ### 15. Passing and Using Data with Event Binding
+
 - `$event``is the data emmited with the event, we can pass this as an argument for a function
+
+### 16. Two way data binding
+
+- We combine Event Binding and Property Binding
+- We also combine the syntaxis `[()]`
+- ngModel will trigger on the event and update a value that we defined in a component class
+- A nice and easy way of responding to events in two ways
