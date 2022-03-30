@@ -141,3 +141,10 @@
 - We also combine the syntaxis `[()]`
 - ngModel will trigger on the event and update a value that we defined in a component class
 - A nice and easy way of responding to events in two ways
+
+### 17. Understanding directives
+
+- Directives are instructions in the DOM
+- Components are directives with a template. They tell the DOM to show some html elements
+- We can build our own custom directives!
+- There are also some build in directives we can use 
