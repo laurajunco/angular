@@ -154,6 +154,9 @@
 - ngIf works as an `if` statement
 - Directives are usually added by using an attribute selector -`<p *ngIf="false"></p>` needs a star because it changes the structure of the DOM. If true renders element
 
-### 19. Enhancing the ngIf Directive with an Else Condition
+### 19. Styling Elements Dynamically with the ngStyle Directive
 
-- 
+- Attribute directives dont change the DOM structure jus the attributes of an element.
+- ngSyle changes styles dynamically
+
+
