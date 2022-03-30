@@ -160,7 +160,10 @@
 - ngSyle changes styles dynamically
 
 ### 20. Applying CSS Classes Dynamically with the ngClass Directive
+
 - ngClass allows us to add a class
 - object with class name and wether it should be added or not
 
+### 21. Displaying Lists Using the ngFor Directive
 
+-
