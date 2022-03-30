@@ -159,4 +159,8 @@
 - Attribute directives dont change the DOM structure jus the attributes of an element.
 - ngSyle changes styles dynamically
 
+### 20. Applying CSS Classes Dynamically with the ngClass Directive
+- ngClass allows us to add a class
+- object with class name and wether it should be added or not
+
 
