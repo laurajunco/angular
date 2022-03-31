@@ -166,4 +166,9 @@
 
 ### 21. Displaying Lists Using the ngFor Directive
 
--
+## Chapter 3 : Course project the basis
+
+### 1. Creating a recipe model
+
+- We need to define the structure of how a recipe will look like in all our App3
+- A model is a typescript file. A blueprint for objects we create.
