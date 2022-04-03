@@ -172,3 +172,10 @@
 
 - We need to define the structure of how a recipe will look like in all our App3
 - A model is a typescript file. A blueprint for objects we create.
+
+## Chapter 4 : Debugging tools
+
+- Console and chrome developer tools are your best friend.
+- Angular javascript files support source maps se we can debugg directly on ts files.
+- sources/webpack/./src
+- Install angular dev tools plugin
