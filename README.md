@@ -193,3 +193,8 @@
 
 - For events we use the `@Output()`decorator
 - We create events as eventemitter properties in our component
+
+### 3. Understanding View Encapsulation
+
+- As a default Angular encapsulates all files of a component to only affect that component. That means styles will only affect the component template they are in.
+- We can overwrite this encapsulation
