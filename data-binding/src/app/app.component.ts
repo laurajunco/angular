@@ -10,6 +10,14 @@ export class AppComponent {
     { type: 'server', name: 'testServer', content: 'content test!' },
   ];
 
+  onChangeFirst() {
+    this.serverElements[0].name = 'new name!';
+  }
+
+  onDeleteFirst() {
+    this.serverElements.splice(0);
+  }
+
   onServerAdded(serverData: { name: string; content: string }) {
     this.serverElements.push({
       type: 'server',

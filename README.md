@@ -214,3 +214,15 @@
 
 - Everything placed inside the html tags of a component is lost by default
 - `<ng-content> </ng-content>` serves as a hook so angular replaces it with the content placed inside the tags of a component
+
+### 7. Understanding the Component Lifecycle
+
+- Once a new component is instantiated, Angular goes through a couple of phases.
+- We can hook into these phases by implementing some methods Angular will call and execute some code.
+  1. ngOnChanges -> called after a bound input property changes
+  2. ngOnInit -> called after the component has been initialized
+     .... will fill this later with img
+
+### 8. the Component Lifecycle in action
+
+-

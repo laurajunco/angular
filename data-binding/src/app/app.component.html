@@ -4,9 +4,15 @@
     (bCreated)="onBlueprintAdded($event)"
   ></app-cockpit>
   <hr />
+  <button class="btn btn-primary" (click)="onChangeFirst()">
+    Change 1st element
+  </button>
+  <button class="btn btn-danger" (click)="onDeleteFirst()">
+    Delete 1st element
+  </button>
   <div class="row">
     <div class="col-xs-12">
-      <app-server-element *ngFor="let el of serverElements" [srvElement]="el">
+      <app-server-element *ngFor="let el of serverElements" [name]="el.name">
         <p>
           <strong *ngIf="el.type === 'server'" style="color: red">{{
             el.content
