@@ -187,3 +187,4 @@
 - We can use event binding into our own components usig custom properties and events
 - By default all properties inside a component are only accesible inside the component
 - If we want a property to be accesible we need to add the decorator `@Input()`
+- We can set an alias for accesing the property outside the component `@Input('alias')`
