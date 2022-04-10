@@ -179,3 +179,11 @@
 - Angular javascript files support source maps se we can debugg directly on ts files.
 - sources/webpack/./src
 - Install angular dev tools plugin
+
+## Chapter 5 : Data binding
+
+### 1. Custom property and event binding
+
+- We can use event binding into our own components usig custom properties and events
+- By default all properties inside a component are only accesible inside the component
+- If we want a property to be accesible we need to add the decorator `@Input()`
