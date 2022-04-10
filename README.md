@@ -78,7 +78,7 @@
 ### 6. Creating Components with the Command Line Input (CLI) and Nesting Components
 
 - We can create components from the CLI
-- `ng generate component servers` or `ng g c servers`
+- `ng generate component servers` or `ng g c servers --skipTests`
 - This will create all the base files needed for a new component
 
 ### 7. Working with Component Templates
