@@ -6,11 +6,11 @@ import { Component, EventEmitter, Output, OnInit } from '@angular/core';
   styleUrls: ['./cockpit.component.css'],
 })
 export class CockpitComponent implements OnInit {
-  @Output() serverCreated = new EventEmitter<{
+  @Output('sCreated') serverCreated = new EventEmitter<{
     name: string;
     content: string;
   }>();
-  @Output() blueprintCreated = new EventEmitter<{
+  @Output('bCreated') blueprintCreated = new EventEmitter<{
     name: string;
     content: string;
   }>();
