@@ -204,3 +204,7 @@
 - A local reference can be placed on any HTML element so not only on a input element `#name`
 - this will reference the complete html element.
 - We can then use this references in our template. Bu not! Inside our typescript code.
+
+### 5. Getting Access to the Template and Document Object Model (DOM) with the @ViewChild Component
+
+-  with the decorator `@ViewChild('selector')` we get access to DOM elements in our typeScript code.
