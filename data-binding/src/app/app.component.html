@@ -3,17 +3,9 @@
   <hr />
   <div class="row">
     <div class="col-xs-12">
-      <div class="card" *ngFor="let element of serverElements">
-        <div class="card-header">{{ element.name }}</div>
-        <div class="card-text">
-          <p>
-            <strong *ngIf="element.type === 'server'" style="color: red">{{
-              element.content
-            }}</strong>
-            <em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
-          </p>
-        </div>
-      </div>
+      <app-server-element
+        *ngFor="let element of serverElements"
+      ></app-server-element>
     </div>
   </div>
 </div>
