@@ -13,7 +13,7 @@
   <div class="row">
     <div class="col-xs-12">
       <app-server-element *ngFor="let el of serverElements" [name]="el.name">
-        <p>
+        <p #contentParagraph>
           <strong *ngIf="el.type === 'server'" style="color: red">{{
             el.content
           }}</strong>
