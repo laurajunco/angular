@@ -5,11 +5,13 @@ import {
   AfterViewInit,
   Component,
   DoCheck,
+  ElementRef,
   Input,
   OnChanges,
   OnDestroy,
   OnInit,
   SimpleChanges,
+  ViewChild,
 } from '@angular/core';
 
 //encapsulation emulated is the default.
@@ -32,6 +34,7 @@ export class ServerElementComponent
     OnDestroy
 {
   @Input() name: string;
+  @ViewChild('header') header: ElementRef;
 
   //Initializes component
   constructor() {
@@ -46,6 +49,7 @@ export class ServerElementComponent
   //after cosntructor
   ngOnInit(): void {
     console.log('ngOnInit called!');
+    console.log(this.header); //will be undefined
   }
 
   //constantly runs to check for changes
@@ -56,6 +60,7 @@ export class ServerElementComponent
   //runs after <ng-content> is initialized
   ngAfterContentInit(): void {
     console.log('ngAfterContentInit called!');
+    console.log(this.header); //will be undefined
   }
 
   //runs after <ng-content> is checked for changes
@@ -66,6 +71,7 @@ export class ServerElementComponent
   //runs after component is rendered
   ngAfterViewInit(): void {
     console.log('ngAfterViewInit called!');
+    console.log(this.header); //will have value
   }
 
   //runs after component is rendered
