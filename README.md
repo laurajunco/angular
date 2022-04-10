@@ -198,3 +198,9 @@
 
 - As a default Angular encapsulates all files of a component to only affect that component. That means styles will only affect the component template they are in.
 - We can overwrite this encapsulation
+
+### 4. Using Local References in Templates
+
+- A local reference can be placed on any HTML element so not only on a input element `#name`
+- this will reference the complete html element.
+- We can then use this references in our template. Bu not! Inside our typescript code.
