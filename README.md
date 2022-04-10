@@ -207,4 +207,10 @@
 
 ### 5. Getting Access to the Template and Document Object Model (DOM) with the @ViewChild Component
 
--  with the decorator `@ViewChild('selector')` we get access to DOM elements in our typeScript code.
+- with the decorator `@ViewChild('selector')` we get access to DOM elements in our typeScript code.
+- Don't use for changing info in the elements!
+
+### 6. Projecting Content into Components with ng-content
+
+- Everything placed inside the html tags of a component is lost by default
+- `<ng-content> </ng-content>` serves as a hook so angular replaces it with the content placed inside the tags of a component
