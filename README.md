@@ -188,3 +188,8 @@
 - By default all properties inside a component are only accesible inside the component
 - If we want a property to be accesible we need to add the decorator `@Input()`
 - We can set an alias for accesing the property outside the component `@Input('alias')`
+
+### 2. Binding to custom events
+
+- For events we use the `@Output()`decorator
+- We create events as eventemitter properties in our component
