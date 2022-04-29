@@ -223,6 +223,5 @@
   2. ngOnInit -> called after the component has been initialized
      .... will fill this later with img
 
-### 8. the Component Lifecycle in action
+## Chapter 6 : Course Project - Components and Data Binding
 
--
