@@ -229,4 +229,7 @@
 - Attribute directives: sit on elements just like attributes (llok just like attrs)
 - Structural directives: can also change the structure of our DOM tree (they have a *)
 
+### 2. ngFor and ngIf Directives Recap
+- We can't have more than 1 structural directive in an element (i.e. can't use ngIf and ngFor)
+
 
