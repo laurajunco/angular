@@ -156,7 +156,7 @@
 
 ### 19. Styling Elements Dynamically with the ngStyle Directive
 
-- Attribute directives dont change the DOM structure jus the attributes of an element.
+- Attribute directives dont change the DOM structure just the attributes of an element.
 - ngSyle changes styles dynamically
 
 ### 20. Applying CSS Classes Dynamically with the ngClass Directive
@@ -231,5 +231,3 @@
 
 ### 2. ngFor and ngIf Directives Recap
 - We can't have more than 1 structural directive in an element (i.e. can't use ngIf and ngFor)
-
-
