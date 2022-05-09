@@ -238,3 +238,10 @@
 - Directives also have the component lifecycle methods (onInit...)
 - We also have to add Directives to the moduleImports in app.module
 - We add directives as an attribute of our element
+
+### 4. Using the Renderer to Build a Better Attribute Directive
+- Is not a good practice to directly access our elements and change their attributes
+- Generate directive with ng: `ng generate directive better-highlight` or `ng g d better-highlight`
+- Renderer gives us access in a better way to the element
+- We need to pass the element native reference to the renderer.
+- Renderer works even if ANgular doesnt have access on the DOM (i.e service workers)
