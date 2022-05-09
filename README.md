@@ -245,3 +245,7 @@
 - Renderer gives us access in a better way to the element
 - We need to pass the element native reference to the renderer.
 - Renderer works even if ANgular doesnt have access on the DOM (i.e service workers)
+
+### 5. Using the @HostListener() Decorator to Listen to Host Events
+- How can we use the directive to react to events that occur to the element?
+- Hostlistener is a convenient way of listening to events on the element
