@@ -26,7 +26,12 @@
         </div>
       </ul>
       <p appBasicHighlight>Highlight me!</p>
-      <p appBetterHighlight>Better Highlight me!</p>
+
+      <!-- here we bind the property to the directive -->
+      <!-- if we are passing down a string, we dont need square brackets or quotes-->
+      <p [appBetterHighlight]="'blue'" defaultColor="yellow">
+        Better Highlight me!
+      </p>
     </div>
   </div>
 </div>

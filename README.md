@@ -253,3 +253,6 @@
 ### 6. Using the @HostBinding() Decorator to Bind to Host Properties
 - there is an easier way of changing the style in a component without using the renderer
 - We bind Hostbinding to a property (i.e background color) and then we can change that property
+
+### 7. Binding to Directive Properties
+- We can also use custom property binding with directives (@input..)
