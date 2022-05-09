@@ -223,5 +223,10 @@
   2. ngOnInit -> called after the component has been initialized
      .... will fill this later with img
 
-## Chapter 6 : Course Project - Components and Data Binding
+## Chapter 7 : Directives Deep Dive
+
+### 1. Module introduction
+- Attribute directives: sit on elements just like attributes (llok just like attrs)
+- Structural directives: can also change the structure of our DOM tree (they have a *)
+
 
