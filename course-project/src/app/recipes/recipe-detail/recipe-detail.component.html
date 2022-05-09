@@ -1,18 +1,23 @@
 <div class="row">
   <div class="col-x2-12">
-    <img [src]="recipe.imgPath" alt="{{recipe.name}}" width="300" class="img-responsive" />
+    <img
+      [src]="recipe.imgPath"
+      alt="{{ recipe.name }}"
+      width="300"
+      class="img-responsive"
+    />
   </div>
 </div>
 
 <div class="row">
   <div class="col-x2-12">
-    <h2>{{recipe.name}}</h2>
+    <h2>{{ recipe.name }}</h2>
   </div>
 </div>
 
 <div class="row">
   <div class="col-x2-12">
-    <div class="dropdown">
+    <div appDropdown class="dropdown">
       <button
         class="btn btn-secondary dropdown-toggle"
         type="button"
@@ -33,7 +38,7 @@
 
 <div class="row">
   <div class="col-x2-12">
-    <p>{{recipe.description}}</p>
+    <p>{{ recipe.description }}</p>
   </div>
 </div>
 
