@@ -231,3 +231,10 @@
 
 ### 2. ngFor and ngIf Directives Recap
 - We can't have more than 1 structural directive in an element (i.e. can't use ngIf and ngFor)
+
+### 3. Creating a Basic Attribute Directive
+- We define custom directives in their own class and file: new-directive.directive.ts
+- Inside the directive we have access to the elemnt it is used in (injection)
+- Directives also have the component lifecycle methods (onInit...)
+- We also have to add Directives to the moduleImports in app.module
+- We add directives as an attribute of our element
