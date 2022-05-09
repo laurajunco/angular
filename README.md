@@ -256,3 +256,10 @@
 
 ### 7. Binding to Directive Properties
 - We can also use custom property binding with directives (@input..)
+
+### 8. What Happens Behind the Scenes on Structural Directives
+
+- Structural directives are transformed by Angular into regular directives. Ths star is because its simpler to use for us
+
+### 9. Building a Structural Directive
+

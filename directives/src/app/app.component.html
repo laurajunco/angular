@@ -6,7 +6,7 @@
       </button>
       <br /><br />
       <ul class="list-group" [ngClass]="{ odd: onlyOdd }">
-        <div *ngIf="!onlyOdd">
+        <div *appUnless="onlyOdd">
           <li
             *ngFor="let even of evenNumbers"
             class="list-group-item"
