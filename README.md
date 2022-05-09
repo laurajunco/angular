@@ -249,3 +249,7 @@
 ### 5. Using the @HostListener() Decorator to Listen to Host Events
 - How can we use the directive to react to events that occur to the element?
 - Hostlistener is a convenient way of listening to events on the element
+
+### 6. Using the @HostBinding() Decorator to Bind to Host Properties
+- there is an easier way of changing the style in a component without using the renderer
+- We bind Hostbinding to a property (i.e background color) and then we can change that property
