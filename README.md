@@ -267,7 +267,12 @@
 - A service is a piece, another class, which acts as a central repository for code we might reuse.
 - We can use them for general tasks which might be centralized
 
-### 3. Creating a Logging Service
+### 2. Creating a Logging Service
 - Create a new file with a Ts class. Naming convention: `logging.service.ts`
 - A service doesn't need decorators because it is just a normal typescript class
 - You **dont** use a service in Angular by instanciating the service class
+
+### 4. Injecting the Logging Service into Components
+- Angulars dependency injector automatically injects an isntance of our service in the components that need it
+- We create a property of the type of our class in the components constructor
+- We also need to provide a service (in the component decorator)
