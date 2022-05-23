@@ -261,5 +261,13 @@
 
 - Structural directives are transformed by Angular into regular directives. Ths star is because its simpler to use for us
 
-### 9. Building a Structural Directive
+## Chapter 9 : Using Services and Dependency Injection
 
+### 1. Intro
+- A service is a piece, another class, which acts as a central repository for code we might reuse.
+- We can use them for general tasks which might be centralized
+
+### 3. Creating a Logging Service
+- Create a new file with a Ts class. Naming convention: `logging.service.ts`
+- A service doesn't need decorators because it is just a normal typescript class
+- You **dont** use a service in Angular by instanciating the service class
