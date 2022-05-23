@@ -276,3 +276,5 @@
 - Angulars dependency injector automatically injects an isntance of our service in the components that need it
 - We create a property of the type of our class in the components constructor
 - We also need to provide a service (in the component decorator)
+
+### 5. Creating a Data Service
