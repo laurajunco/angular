@@ -278,3 +278,8 @@
 - We also need to provide a service (in the component decorator)
 
 ### 5. Creating a Data Service
+- We can also create services to store and keep track of the data in our application
+
+### 6. Understanding the Hierarchical Injector
+- When we use a service, angular instanciates it for that component and all its children
+- To use the instance of the father component, remove the service from the providers array

@@ -16,7 +16,6 @@ export class AccountService {
 
   addAccount(newAccount: { name: string; status: string }) {
     this.accounts.push(newAccount);
-    console.log(this.accounts);
   }
 
   updateStatus(updateInfo: { id: number; newStatus: string }) {
