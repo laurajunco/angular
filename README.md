@@ -285,3 +285,7 @@
 - To use the instance of the father component, remove the service from the providers array
 
 ### 7. Injecting Services into Other Services
+- You can use a service within another service.
+- For this you declare it as a property in the service constructor
+- You add both services as providers in app.module
+- If a service will use another service it will need the `@injectable` decorator
