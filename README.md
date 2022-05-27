@@ -283,3 +283,5 @@
 ### 6. Understanding the Hierarchical Injector
 - When we use a service, angular instanciates it for that component and all its children
 - To use the instance of the father component, remove the service from the providers array
+
+### 7. Injecting Services into Other Services
