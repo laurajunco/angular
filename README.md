@@ -304,3 +304,6 @@
 - We can do this in the app module
 - Each route needs a route and a component.
 - We need to add`RouterModule.forRoot(appRoutes)` to app Module
+
+### 3. Navigating with Router Links
+- We use the `RouterLink` directive to change between routes without reloading the page
