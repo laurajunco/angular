@@ -320,3 +320,7 @@
 - We can also change routes inside our component class.
 - We inject the router in the components constructor
 - we call `this.router.navigate(["pathSegment", "pathSegment"]);`
+
+### 7. Using Relative Paths in Programmatic Navigation
+- the navigat e,ethod doesnt know the current route.
+- We can add this to the navigate() config.
