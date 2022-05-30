@@ -315,3 +315,8 @@
 ### 5. Styling Active Router Links
 - `routerLinkActive="active"` adds the class to each active link if it contains the path you are on
 - `[routerLinkActiveOptions]="{ exact: true }` only adds the class if the route is an exact match.
+
+### 6. Navigating Programmatically
+- We can also change routes inside our component class.
+- We inject the router in the components constructor
+- we call `this.router.navigate(["pathSegment", "pathSegment"]);`
