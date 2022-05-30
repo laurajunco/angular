@@ -2,3 +2,9 @@
 <p>Manage your Servers and Users.</p>
 
 <button class="btn btn-primary" (click)="onLoadServer(2)">Load Servers</button>
+<button class="btn btn-default" (click)="this.authService.login()">
+  Login
+</button>
+<button class="btn btn-default" (click)="this.authService.logout()">
+  Logout
+</button>
