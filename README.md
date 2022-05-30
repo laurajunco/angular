@@ -312,4 +312,6 @@
 - `servers` is a relative path. `/servers` is an absolute path
 - You can navigate as if you were on a file directory. `../servers`
 
-### 5. 
+### 5. Styling Active Router Links
+- `routerLinkActive="active"` adds the class to each active link if it contains the path you are on
+- `[routerLinkActiveOptions]="{ exact: true }` only adds the class if the route is an exact match.
