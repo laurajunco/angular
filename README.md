@@ -289,3 +289,7 @@
 - For this you declare it as a property in the service constructor
 - You add both services as providers in app.module
 - If a service will use another service it will need the `@injectable` decorator
+
+### 8. Using Services for Cross-component Communication
+- We can use services for sending information across components
+- 
