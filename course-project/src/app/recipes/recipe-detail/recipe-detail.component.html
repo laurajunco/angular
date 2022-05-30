@@ -30,7 +30,11 @@
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <li><a class="dropdown-item" href="#">Edit</a></li>
         <li><a class="dropdown-item" href="#">Delete</a></li>
-        <li><a class="dropdown-item" href="#">Add to shopping list</a></li>
+        <li>
+          <a class="dropdown-item" style="cursor: pointer" (click)="addToList()"
+            >Add to shopping list</a
+          >
+        </li>
       </ul>
     </div>
   </div>

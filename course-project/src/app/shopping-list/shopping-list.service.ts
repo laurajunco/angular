@@ -13,9 +13,8 @@ export class ShoppingListService {
     return [...this.ingredients];
   }
 
-  addIngredient(ingredient: Ingredient) {
-    // this is added to the ingredients array but other components only have access to a copy of it
-    this.ingredients.push(ingredient);
+  addIngredients(newIngredients: Ingredient[]) {
+    this.ingredients = [...this.ingredients, ...newIngredients];
     //we inform other components that ingredients has been updated
     this.ingredientsChanged.emit([...this.ingredients]);
   }
