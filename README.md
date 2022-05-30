@@ -307,3 +307,9 @@
 
 ### 3. Navigating with Router Links
 - We use the `RouterLink` directive to change between routes without reloading the page
+
+### 4. Understanding Navigation Paths
+- `servers` is a relative path. `/servers` is an absolute path
+- You can navigate as if you were on a file directory. `../servers`
+
+### 5. 
