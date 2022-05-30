@@ -328,3 +328,7 @@
 ### 8. Passing Parameters to Routes
 - We can add dynamic segments to our paths. `"users/:id"`
 - We can route params `this.currentRoute.snapshot.params["name"]`
+
+### 9. Route Observables
+- An observable is an easy way to subscribe to an event which might happen.
+- Angular cleans up the subscription whenever the component is destroyed. (by default)
