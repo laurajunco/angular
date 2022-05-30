@@ -332,3 +332,7 @@
 ### 9. Route Observables
 - An observable is an easy way to subscribe to an event which might happen.
 - Angular cleans up the subscription whenever the component is destroyed. (by default)
+
+### 10. Passing Query Parameters and Fragments
+- We might wan to add query parameters to our query `?mode=editing&#loading`
+- 
