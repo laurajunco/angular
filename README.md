@@ -292,4 +292,9 @@
 
 ### 8. Using Services for Cross-component Communication
 - We can use services for sending information across components
-- 
+
+
+## Chapter 11 : Changing Pages with Routing
+
+### 1. Introduction
+- Angular ships with its own router which allows you to change the URL in the URL bar and still only use one page.
