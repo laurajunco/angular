@@ -298,3 +298,9 @@
 
 ### 1. Introduction
 - Angular ships with its own router which allows you to change the URL in the URL bar and still only use one page.
+
+### 2. Setting up and loading routes
+- We need to learn Angular know which routes we will have in our app.
+- We can do this in the app module
+- Each route needs a route and a component.
+- We need to add`RouterModule.forRoot(appRoutes)` to app Module
