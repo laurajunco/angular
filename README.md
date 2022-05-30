@@ -324,3 +324,7 @@
 ### 7. Using Relative Paths in Programmatic Navigation
 - the navigat e,ethod doesnt know the current route.
 - We can add this to the navigate() config.
+
+### 8. Passing Parameters to Routes
+- We can add dynamic segments to our paths. `"users/:id"`
+- We can route params `this.currentRoute.snapshot.params["name"]`
