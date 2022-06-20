@@ -367,4 +367,4 @@
 - Observables, we can subscribe to them but they're rather passive.
 - A subject is an object you can subscribe to, but you can call next on it from outside.
 - Using a subject is the recommended way
-- We only use SUbjects instead of event emmitters for cross component comunication. If you are using @output then you use eventEmmiter
+- We only use Subjects instead of event emmitters for cross component comunication. If you are using @output then you use eventEmmiter
