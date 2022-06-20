@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
 import { interval, Observable, Subscription } from "rxjs";
+import { filter, map } from "rxjs/operators";
 
 @Component({
   selector: "app-home",
@@ -17,38 +18,41 @@ export class HomeComponent implements OnInit, OnDestroy {
     //   console.log(count);
     // });
 
-    const customIntervalObservable = Observable.create((observer) => {
-      let count = 0;
-      //the observer is interested in hearing about changes in data
-      setInterval(() => {
-        //emit a new value
-        observer.next(count);
+    const customIntervalObservable: Observable<number> = Observable.create(
+      (observer) => {
+        let count = 0;
+        setInterval(() => {
+          observer.next(count);
 
-        //completes the observable. It stops. 
-        if (count === 2) {
-          observer.complete();
-        }
+          if (count === 4) {
+            observer.complete();
+          }
 
-        //after throwing an error the observable dies. It doesn't complete
-        if (count > 3) {
-          observer.error(new Error("count is greter than 3"));
-        }
-        count++;
-      }, 1000);
-    });
-
-    // first argument gets called when receiving and event
-    // second argument is the function that gets called if there is an error
-    // third argument is called when observable completes
-    this.firstObsSubscription = customIntervalObservable.subscribe(
-      (data) => console.log(data),
-      (error) => alert(error.message),
-      () => console.log("Completed!")
+          if (count > 5) {
+            observer.error(new Error("count is greter than 3"));
+          }
+          count++;
+        }, 1000);
+      }
     );
+
+    //operators
+    //pipe is rxjs method
+    // map applies a funciton to each value emitted, does something to it and emits the resulting value
+    // we can add as many operators as we want to the pipe method and it will do them one after the other
+    this.firstObsSubscription = customIntervalObservable
+      .pipe(
+        filter((data) => data > 0),
+        map((data) => `Round ${data}`)
+      )
+      .subscribe(
+        (data) => console.log(data),
+        (error) => alert(error.message),
+        () => console.log("Completed!")
+      );
   }
 
   ngOnDestroy() {
-    // when we leave the component the subscription is cleared
     this.firstObsSubscription.unsubscribe();
   }
 }

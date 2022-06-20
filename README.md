@@ -355,3 +355,9 @@
 - Observables don't necessarily stop emitting values just because you're not interested in them anymore.
 - We have to unsubscribe from the observable when leaving the component that calls it
 - The observables provided by Angular are managed by Angular and therefore, we don't need to unsubscribe manually as Angular will take care of that.
+
+### 4. Understanding operators
+- Operators are the magic feature of the rxjs library
+- Sometimes we dont want the raw data, we mght want to transform it. Thats when we use operators
+- Built in operators will transform the data and then we can subscribe to the result of that operation
+- 
