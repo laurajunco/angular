@@ -352,4 +352,6 @@
 - Observables are constructs to which you subscribe to be informed about changes in data
 
 ### 3. Getting Closer to the Core of Observables
-- 
+- Observables don't necessarily stop emitting values just because you're not interested in them anymore.
+- We have to unsubscribe from the observable when leaving the component that calls it
+- The observables provided by Angular are managed by Angular and therefore, we don't need to unsubscribe manually as Angular will take care of that.
