@@ -360,4 +360,11 @@
 - Operators are the magic feature of the rxjs library
 - Sometimes we dont want the raw data, we mght want to transform it. Thats when we use operators
 - Built in operators will transform the data and then we can subscribe to the result of that operation
-- 
+
+### 5. Subjects
+- Instead of event emmitter we can create a Subject
+- the subject is a special kind of observable.
+- Observables, we can subscribe to them but they're rather passive.
+- A subject is an object you can subscribe to, but you can call next on it from outside.
+- Using a subject is the recommended way
+- We only use SUbjects instead of event emmitters for cross component comunication. If you are using @output then you use eventEmmiter
