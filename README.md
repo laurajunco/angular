@@ -335,3 +335,21 @@
 
 ### 10. Passing Query Parameters and Fragments
 - We might wan to add query parameters to our query `?mode=editing&#loading`
+
+...
+
+## Chapter 13: Understanding Observables
+
+### 1. Introduction
+- An observable can be thought of as a data source
+- An object we import form rxjs
+- Observable pattern: obervable ----> stream -----> observer
+- The observable emits events (data packages)
+- Observer: subscribe function to handle data packages: handle data, errors or completion
+- We determine what happens when we receive each kind of data package
+
+### 2. Analyzing Angular Observables
+- Observables are constructs to which you subscribe to be informed about changes in data
+
+### 3. Getting Closer to the Core of Observables
+- 
