@@ -23,13 +23,28 @@ export class HomeComponent implements OnInit, OnDestroy {
       setInterval(() => {
         //emit a new value
         observer.next(count);
+
+        //completes the observable. It stops. 
+        if (count === 2) {
+          observer.complete();
+        }
+
+        //after throwing an error the observable dies. It doesn't complete
+        if (count > 3) {
+          observer.error(new Error("count is greter than 3"));
+        }
         count++;
       }, 1000);
     });
 
-    this.firstObsSubscription = customIntervalObservable.subscribe((data) => {
-      console.log(data);
-    });
+    // first argument gets called when receiving and event
+    // second argument is the function that gets called if there is an error
+    // third argument is called when observable completes
+    this.firstObsSubscription = customIntervalObservable.subscribe(
+      (data) => console.log(data),
+      (error) => alert(error.message),
+      () => console.log("Completed!")
+    );
   }
 
   ngOnDestroy() {
